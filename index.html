@@ -260,12 +260,15 @@ body{font-family:-apple-system,"Noto Sans TC","PingFang TC",sans-serif;backgroun
 /* Hero */
 .hero{background:linear-gradient(160deg,#fff8f0 0%,#ffeedd 60%,#ffd9b0 100%);color:#5a2e0a;padding:32px 20px 0;text-align:center;position:relative;overflow:hidden}
 .hero-deco{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-.hero-deco span{position:absolute;font-size:56px;opacity:.12;animation:float 6s ease-in-out infinite}
-.hero-deco span:nth-child(1){top:10%;left:5%;animation-delay:0s}
-.hero-deco span:nth-child(2){top:20%;right:8%;animation-delay:1s}
-.hero-deco span:nth-child(3){bottom:30%;left:12%;animation-delay:2s}
-.hero-deco span:nth-child(4){bottom:20%;right:6%;animation-delay:1.5s}
-.hero-deco span:nth-child(5){top:5%;left:40%;animation-delay:.5s}
+.hero-deco span{position:absolute;font-size:64px;opacity:.30;animation:float 6s ease-in-out infinite}
+.hero-deco span:nth-child(1){top:8%;left:4%;animation-delay:0s}
+.hero-deco span:nth-child(2){top:15%;right:6%;animation-delay:1s;font-size:52px}
+.hero-deco span:nth-child(3){bottom:28%;left:10%;animation-delay:2s;font-size:48px}
+.hero-deco span:nth-child(4){bottom:18%;right:5%;animation-delay:1.5s;font-size:56px}
+.hero-deco span:nth-child(5){top:5%;left:38%;animation-delay:.5s;font-size:44px}
+.hero-deco span:nth-child(6){top:55%;left:2%;animation-delay:2.5s;font-size:50px}
+.hero-deco span:nth-child(7){top:40%;right:3%;animation-delay:3s;font-size:54px}
+.hero-deco span:nth-child(8){bottom:5%;left:50%;animation-delay:1.8s;font-size:46px}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .hero>*:not(.hero-deco){position:relative}
 .hero-badge{display:inline-block;background:#fff;border:1.5px solid #e8a060;border-radius:30px;padding:5px 18px;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:16px;color:#c06030}
@@ -344,7 +347,12 @@ footer strong{color:#8a5830}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
 @media(max-width:600px){
-  .cards-grid{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .card-img{height:130px}
+  .card-title{font-size:13px}
+  .deal-price{font-size:20px}
+  .code-value{font-size:13px}
+  .url-row{display:none}
   .hero h1{font-size:22px}
   .hero-codes{flex-direction:column;align-items:center}
 }
@@ -354,7 +362,7 @@ footer strong{color:#8a5830}
 
 <div class="hero">
   <div class="hero-deco">
-    <span>🗼</span><span>✈️</span><span>🌸</span><span>🏖️</span><span>⛩️</span>
+    <span>🗼</span><span>✈️</span><span>🌸</span><span>🏖️</span><span>⛩️</span><span>🍜</span><span>🎌</span><span>🌺</span>
   </div>
   <div class="hero-badge">✨ 每日早上 9:00 自動更新・共 75 筆優惠</div>
   <h1>跟著愛可出發<br><span>旅遊特惠每日精選</span></h1>
@@ -392,7 +400,7 @@ footer strong{color:#8a5830}
   <div class="cards-grid">
   <div class="deal-card" data-cat="閃購">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🍁【月底閃購】京都祕境一日遊｜勝尾寺・愛宕念佛寺・嵐山竹林</h3>
@@ -419,7 +427,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="閃購">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🎭【月底閃購買一送一】首爾 NANTA 亂打秀</h3>
@@ -441,7 +449,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="閃購">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">👻【月底閃購買一送一】伊藤潤二展｜恐怖漫畫大師特展</h3>
@@ -463,7 +471,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="東南亞">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🍜</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🏖️【5折狂歡】富國島太陽世界水上樂園門票</h3>
@@ -490,7 +498,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🧱【買一送一】韓國樂高樂園門票</h3>
@@ -517,7 +525,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🏮【買一送一】京都東福寺 ZEN NIGHT 高級夜間觀賞門票</h3>
@@ -539,7 +547,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="東南亞">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🍜</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🇻🇳【買一送一 $163/人】西貢早晨城市之旅一日遊</h3>
@@ -566,7 +574,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🗻【5折優惠 $965/人】富士山五合目・河口湖・忍野八海一日遊</h3>
@@ -593,7 +601,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🌸【買一送一 $1,040/人】茨城常陸海濱公園花海・大洗鳥居一日遊</h3>
@@ -620,7 +628,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🌊【買一送一 $643/人】日本天橋立一日遊</h3>
@@ -647,7 +655,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">⛩️【買一送一 $1,027/人】京都一日遊｜貴船神社・嵐山・三千院</h3>
@@ -674,7 +682,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="閃購">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🍲【21:00閃購5折】海底撈火鍋抵用券</h3>
@@ -701,7 +709,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="閃購">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🌶️【21:00閃購5折】鼎王麻辣鍋餐券</h3>
@@ -728,7 +736,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🎣</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🎣" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🇰🇷【5折優惠】釜山通行證 Visit Busan Pass</h3>
@@ -755,7 +763,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌺</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">✈️【機票5折】亞洲航空 沖繩4天計劃機票</h3>
@@ -782,7 +790,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">✈️【機票5折】酷航 首爾計劃機票｜含托運行李</h3>
@@ -809,7 +817,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🦁</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🦁" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">✈️【機票5折】酷航 新加坡計劃機票</h3>
@@ -836,7 +844,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">🏨【機加酒】大阪4日機加酒｜暑假限定</h3>
@@ -863,7 +871,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【經典打卡首選】富士山一日遊</h3>
@@ -890,7 +898,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【雙湖無敵全景】富士山雙湖全景一日遊</h3>
@@ -917,7 +925,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【網美花海必拍】富士山賞花絕景一天團</h3>
@@ -944,7 +952,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【夢幻海線雙拼】京都天橋立・伊根舟屋一日遊</h3>
@@ -971,7 +979,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【秘境合掌村】京都天橋立・美山茅草屋一日遊</h3>
@@ -998,7 +1006,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【親子放電神行程】淡路島賞花親親樹熊一天團</h3>
@@ -1025,7 +1033,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">⛩️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">日本京都奈良一日遊</h3>
@@ -1052,7 +1060,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【買一送一】韓國秋日限定賞楓一日遊</h3>
@@ -1079,7 +1087,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【買一送一】韓國紅葉秘境一日遊</h3>
@@ -1106,7 +1114,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">首爾個人色彩鑑定｜K-Beauty 88折</h3>
@@ -1133,7 +1141,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">首爾 Ye-Lead 高級美髮沙龍｜K-Beauty 88折</h3>
@@ -1160,7 +1168,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">韓國 K-POP 偶像畫報拍攝體驗｜K-Beauty 88折</h3>
@@ -1187,7 +1195,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">景福宮韓服妝容體驗｜K-Beauty 88折</h3>
@@ -1214,7 +1222,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【買一送一 $355/人】首爾美食一日遊｜含韓服+海鮮放題</h3>
@@ -1241,7 +1249,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="東南亞">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/20030s000000hzn0n9310_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏙️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/20030s000000hzn0n9310_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【兩天一夜 $710/人】惠州五星飯店純玩團</h3>
@@ -1268,7 +1276,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【5折神券】橫濱港未來萬葉俱樂部門票</h3>
@@ -1295,7 +1303,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌺</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">沖繩 Fun Pass 超值系列</h3>
@@ -1322,7 +1330,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌺</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">沖繩 DMM Kariyushi 水族館門票</h3>
@@ -1349,7 +1357,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌺</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0220h12000lj06m5s9364_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">Churasun 6 沖繩表演觀賞門票</h3>
@@ -1376,7 +1384,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">豪華版關西樂享周遊券｜含USJ特權入場</h3>
@@ -1403,7 +1411,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">麗星郵輪 探索星號 Star Navigator</h3>
@@ -1430,7 +1438,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【長岡煙火節】新宿出發含指定座位一日遊</h3>
@@ -1457,7 +1465,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【長岡花火大會】名古屋出發專屬觀賞席一日遊</h3>
@@ -1484,7 +1492,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">台北 XR 沉浸玩家｜消失的法老古夫金字塔VR體驗</h3>
@@ -1511,7 +1519,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">埃及木乃伊 - 永生傳說特展</h3>
@@ -1538,7 +1546,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">櫻桃小丸子原作 40 週年特展</h3>
@@ -1565,7 +1573,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">A World of Wonder 奇想世界特展</h3>
@@ -1592,7 +1600,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">JR HARUKA 關西機場快線｜贈7天21GB eSIM</h3>
@@ -1614,7 +1622,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">京成電鐵 Skyliner 成田機場快線｜贈7天21GB eSIM</h3>
@@ -1636,7 +1644,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">大阪周遊卡一日券・二日券｜贈7天21GB eSIM</h3>
@@ -1658,7 +1666,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">JR PASS 東日本鐵路周遊券｜贈7天21GB eSIM</h3>
@@ -1680,7 +1688,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc0w12000me0dxct2E7F_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">JR PASS 關西廣島5日券｜贈7天21GB eSIM</h3>
@@ -1702,7 +1710,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="歐洲">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【瑞士通行證】含桃園機場接送折扣券$1000</h3>
@@ -1729,7 +1737,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="歐洲">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">瑞士半價卡 Swiss Half Fare Card</h3>
@@ -1756,7 +1764,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="歐洲">
     <div class="badge">省15%</div>
-    <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_119917/20260618053120_XsqpR/png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_119917/20260618053120_XsqpR/png" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【罕見85折+贈eSIM】歐洲鐵路全境通行證 Eurail Global Pass</h3>
@@ -1778,7 +1786,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0221712000oahl31u544A_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#00C569">🎫 KKday</div>
       <h3 class="card-title">【限7/8出發】樂桃航空東京5天計劃機票｜含托運行李</h3>
@@ -1808,7 +1816,7 @@ footer strong{color:#8a5830}
   <div class="cards-grid">
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-001497/M_PIC2503-001497.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-001497/M_PIC2503-001497.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">嘉義二日｜618第二人半價＆免小費｜阿里山風情.歐風佐登妮絲.台中LALAPOR</h3>
@@ -1830,7 +1838,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2507-000720/M_PIC2507-000720.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2507-000720/M_PIC2507-000720.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">新北旅遊｜免小費｜福爾摩沙北海岸藝術季.自然地景路線1日</h3>
@@ -1852,7 +1860,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2409-001899/M_PIC2409-001899.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2409-001899/M_PIC2409-001899.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">限量免小費~廣島旅遊｜世界遺產嚴島神社.出雲大社.松江城.岡山後樂園.倉敷美觀地</h3>
@@ -1874,7 +1882,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000327/M_PIC2503-000327.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000327/M_PIC2503-000327.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">限量促銷免小費.東北旅遊|秘境五色沼.銀山溫泉街.角館武家屋敷.郭公糰子.山形熊</h3>
@@ -1896,7 +1904,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1605-012506/M_PIC1605-012506.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1605-012506/M_PIC1605-012506.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">玩樂369旗艦丹麥挪威12日｜三峽灣、三纜車、勞馬景觀鐵路、兩晚五星｜夏季版．免</h3>
@@ -1918,7 +1926,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2305-002626/M_PIC2305-002626.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2305-002626/M_PIC2305-002626.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">最高省1萬｜旗艦德瑞10日｜少女峰．楚格峰．新天鵝堡．國王湖遊船．景觀火車．米其</h3>
@@ -1940,7 +1948,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1906-012448/M_PIC1906-012448.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1906-012448/M_PIC1906-012448.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">早鳥免小費》南非精選10日│全程四星、雙點進出、開普敦、花園大道、鮑魚農場、動物</h3>
@@ -1962,7 +1970,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2003-004561/M_PIC2003-004561.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2003-004561/M_PIC2003-004561.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">賀歲折5000｜荷比法三遊船10日｜羅浮宮．凡爾賽宮．童話羊角村．一晚五星．高速</h3>
@@ -1984,7 +1992,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2404-000904/M_PIC2404-000904.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2404-000904/M_PIC2404-000904.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">早鳥免小費》突尼西亞經典11日｜忘憂傑爾巴島、藍白海岸、綠洲探索、撒哈拉浪遊、八</h3>
@@ -2006,7 +2014,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="日本">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000056/M_PIC2503-000056.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">❄️</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000056/M_PIC2503-000056.jpg" loading="lazy" alt="" data-emoji="❄️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">北海道｜早鳥免小費｜阿寒湖LUMINA.薰衣草六合一.十勝千年之森.流冰館.小樽</h3>
@@ -2028,7 +2036,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2207-000921/M_PIC2207-000921.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2207-000921/M_PIC2207-000921.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">台中旅遊｜免小費~熱血國際踩舞嘉年華.大口吃肉~森森燒肉.霧峰林家~聽故事.做自</h3>
@@ -2050,7 +2058,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="其他">
     <div class="badge code-badge">優惠連結</div>
-    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2009-003251/M_PIC2009-003251.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2009-003251/M_PIC2009-003251.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#E30B14">🦁 雄獅旅遊</div>
       <h3 class="card-title">春節折5000｜五星奧捷免小費｜熊布朗宮音樂會．布拉格城堡．絕美雙湖~哈修塔特湖</h3>
@@ -2080,7 +2088,7 @@ footer strong{color:#8a5830}
   <div class="cards-grid">
   <div class="deal-card" data-cat="東南亞">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc2w12000em9x3802E43_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🛕</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc2w12000em9x3802E43_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🛕" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">一起去曼谷</h3>
@@ -2102,7 +2110,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">台北-清邁機票來回自由行</h3>
@@ -2124,7 +2132,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/0Q1D91IxHP8p76PQaXXan7e_V0UTBuc463Ak7eWPUDM/g:ce/q:95/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2hwaW1nL2hwL2Jhbm5lci8zNTZ4MTMwLzM1NngxMzBfMjAyNTA5MDlMSmFsbDkucG5n.png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/0Q1D91IxHP8p76PQaXXan7e_V0UTBuc463Ak7eWPUDM/g:ce/q:95/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2hwaW1nL2hwL2Jhbm5lci8zNTZ4MTMwLzM1NngxMzBfMjAyNTA5MDlMSmFsbDkucG5n.png" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">易遊網機加酒</h3>
@@ -2146,7 +2154,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="韓國">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🇰🇷</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">暢玩首爾</h3>
@@ -2168,7 +2176,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="東南亞">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/20030s000000hzn0n9310_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏙️</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/20030s000000hzn0n9310_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">香港最好玩</h3>
@@ -2190,7 +2198,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/GXmJ6i8eFsnsLG6idetfvXdt8F9na4WMHQOoEgH10u4/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9UWU9fNjAweDYwMC5wbmc.png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🗼</div>'"></div>
+    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/GXmJ6i8eFsnsLG6idetfvXdt8F9na4WMHQOoEgH10u4/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9UWU9fNjAweDYwMC5wbmc.png" loading="lazy" alt="" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">台北-東京機加酒</h3>
@@ -2212,7 +2220,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/NSpq3DVJZ7x4es2VT_GIrxpQ4q41ihJngKgp_1_Fy0I/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PS0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌺</div>'"></div>
+    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/NSpq3DVJZ7x4es2VT_GIrxpQ4q41ihJngKgp_1_Fy0I/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PS0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">台北-沖繩(那霸)機加酒</h3>
@@ -2234,7 +2242,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/c6ukbIj3kGGSIeSjsUqP4GPB_4wPALJtcB6pqT0kaG8/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PU0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🏯</div>'"></div>
+    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/c6ukbIj3kGGSIeSjsUqP4GPB_4wPALJtcB6pqT0kaG8/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PU0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">台北-大阪機加酒</h3>
@@ -2256,7 +2264,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="機票">
     
-    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/Zri2YteDMF53CkXoBrNGePhneZgx86f3s_qg6F7yjgc/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9GVUtfNjAweDYwMC5wbmc.png" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🍜</div>'"></div>
+    <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/Zri2YteDMF53CkXoBrNGePhneZgx86f3s_qg6F7yjgc/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9GVUtfNjAweDYwMC5wbmc.png" loading="lazy" alt="" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#0066CC">✈️ 易遊網</div>
       <h3 class="card-title">台北-福岡機加酒</h3>
@@ -2286,7 +2294,7 @@ footer strong{color:#8a5830}
   <div class="cards-grid">
   <div class="deal-card" data-cat="台灣">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#9B59B6">🏨 易遊網飯店</div>
       <h3 class="card-title">福爾摩沙花園酒店｜2026台南新飯店</h3>
@@ -2308,7 +2316,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583g12000sm8bbs69F84_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583g12000sm8bbs69F84_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#9B59B6">🏨 易遊網飯店</div>
       <h3 class="card-title">鹿港澄悅酒店｜易遊網獨家</h3>
@@ -2330,7 +2338,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#9B59B6">🏨 易遊網飯店</div>
       <h3 class="card-title">日月潭泰湖樓溫泉酒店｜獨家一泊二食</h3>
@@ -2352,7 +2360,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0204l12000a5cf3pqD3D0_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0204l12000a5cf3pqD3D0_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#9B59B6">🏨 易遊網飯店</div>
       <h3 class="card-title">台中裕元花園酒店｜暑假贈兒童免費住</h3>
@@ -2374,7 +2382,7 @@ footer strong{color:#8a5830}
   </div>
   <div class="deal-card" data-cat="台灣">
     
-    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583412000snq29ww784D_C_600_400_R5_Q80.jpg" loading="lazy" alt="" onerror="this.parentElement.innerHTML='<div class=\"card-img-ph\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:70px\">🌍</div>'"></div>
+    <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583412000snq29ww784D_C_600_400_R5_Q80.jpg" loading="lazy" alt="" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
       <div class="src-tag" style="background:#9B59B6">🏨 易遊網飯店</div>
       <h3 class="card-title">鹿港永樂酒店｜易遊網一泊二食</h3>
@@ -2400,7 +2408,7 @@ footer strong{color:#8a5830}
 
 <footer>
   <strong>愛可推薦</strong> 每日早上 9:00 自動整理<br>
-  以上價格僅供參考，實際以各平台官網為準 · 2026/06/29 10:21 更新
+  以上價格僅供參考，實際以各平台官網為準 · 2026/06/29 10:44 更新
 </footer>
 <div class="toast" id="toast"></div>
 

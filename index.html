@@ -421,6 +421,22 @@ footer strong{color:#8a5830}
 .trust-title{font-size:14px;font-weight:700;color:#4a2008;margin-bottom:4px}
 .trust-desc{font-size:12px;color:#9a6040;line-height:1.5}
 
+/* ── 相關推薦底部抽屜 ── */
+.rec-drawer{position:fixed;bottom:-380px;left:0;right:0;background:#fff;border-radius:20px 20px 0 0;box-shadow:0 -4px 24px rgba(60,20,0,.18);z-index:600;transition:bottom .38s cubic-bezier(.34,1.06,.64,1);padding-bottom:env(safe-area-inset-bottom,20px)}
+.rec-drawer.open{bottom:0}
+.rec-drawer-hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 20px 10px;border-bottom:1px solid #f0e0cc}
+.rec-drawer-title{font-size:14px;font-weight:800;color:#4a2008}
+.rec-drawer-close{background:none;border:none;font-size:22px;cursor:pointer;color:#b09070;padding:0 4px;line-height:1;flex-shrink:0}
+.rec-cards{display:flex;gap:12px;overflow-x:auto;padding:14px 20px 16px;scrollbar-width:none}
+.rec-cards::-webkit-scrollbar{display:none}
+.rec-card{flex-shrink:0;width:155px;background:#fffaf4;border-radius:12px;border:1px solid #f0e0cc;overflow:hidden;text-decoration:none;display:block;transition:transform .15s,box-shadow .15s}
+.rec-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(120,60,20,.12)}
+.rec-card-img{width:100%;height:85px;object-fit:cover;display:block;background:linear-gradient(135deg,#c07840,#e0a060)}
+.rec-card-ph{height:85px;display:flex;align-items:center;justify-content:center;font-size:36px;background:linear-gradient(135deg,#c07840,#e0a060)}
+.rec-card-body{padding:8px 10px 10px}
+.rec-card-title{font-size:11.5px;font-weight:700;color:#3d2010;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rec-card-price{font-size:13px;font-weight:900;color:#b83820;margin-top:3px}
+
 @media(max-width:600px){
   .cards-grid{grid-template-columns:1fr 1fr;gap:12px}
   .card-img{height:130px}
@@ -494,7 +510,7 @@ footer strong{color:#8a5830}
     <span class="sec-count">愛可挑 5 筆</span>
   </div>
   <div class="cards-grid">
-  <div class="deal-card" data-cat="台灣" data-tags="住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="住宿" data-dest="">
     <div class="badge featured-badge">★ 編輯推薦</div>
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="福爾摩沙花園酒店｜2026台南新飯店" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -517,7 +533,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://hotel.eztravel.com.tw/detail?CityID=3847&HotelID=133206303" target="_blank" rel="noopener">立即比價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="歐洲" data-tags="eSIM|JR">
+  <div class="deal-card" data-cat="歐洲" data-tags="eSIM|JR" data-dest="">
     <div class="badge urgent-badge">💥 罕見特惠</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_119917/20260618053120_XsqpR/png" loading="lazy" alt="罕見85折+贈eSIM歐洲鐵路全境通行證 Eurail Global Pass" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -540,7 +556,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/119917?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="機票">
+  <div class="deal-card" data-cat="機票" data-tags="機票" data-dest="東京">
     <div class="badge urgent-badge">⏰ 限時緊急</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_259305/20241018115500_BBQ6A/png" loading="lazy" alt="限7/8出發樂桃航空東京5天計劃機票｜含托運行李" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -563,7 +579,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/259305?cid=2299" target="_blank" rel="noopener">查看最低價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge urgent-badge">🔥 限量</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2409-001899/M_PIC2409-001899.jpg" loading="lazy" alt="限量免小費~廣島旅遊｜世界遺產嚴島神社.出雲大社.松江城.岡山後樂園.倉敷美觀地" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -586,7 +602,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=5c3f01bd-0d43-41a6-bcbd-999a015da2af&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge urgent-badge">🔥 限量</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000327/M_PIC2503-000327.jpg" loading="lazy" alt="限量促銷免小費.東北旅遊|秘境五色沼.銀山溫泉街.角館武家屋敷.郭公糰子.山形熊" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -617,7 +633,7 @@ footer strong{color:#8a5830}
     <span class="sec-count">54 筆優惠</span>
   </div>
   <div class="cards-grid">
-  <div class="deal-card" data-cat="閃購" data-tags="票券">
+  <div class="deal-card" data-cat="閃購" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_287665/20250613032221_x4hX6/jpg" loading="lazy" alt="月底閃購京都祕境一日遊｜勝尾寺・愛宕念佛寺・嵐山竹林" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -645,7 +661,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/287665?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="閃購" data-tags="票券">
+  <div class="deal-card" data-cat="閃購" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_2358/20260521151435_bnc6a/jpg" loading="lazy" alt="月底閃購買一送一首爾 NANTA 亂打秀" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -668,7 +684,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/2358?cid=2299" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="閃購" data-tags="票券">
+  <div class="deal-card" data-cat="閃購" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_579222/20260610031620_DjBAq/jpg" loading="lazy" alt="月底閃購買一送一伊藤潤二展｜恐怖漫畫大師特展" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -691,7 +707,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/579222?cid=2299" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="東南亞" data-tags="票券">
+  <div class="deal-card" data-cat="東南亞" data-tags="票券" data-dest="富國島">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_100556/20260522123302_R97x7/png" loading="lazy" alt="5折狂歡富國島太陽世界水上樂園門票" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -719,7 +735,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/100556?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_140195/20260619085234_NKGVO/jpg" loading="lazy" alt="買一送一韓國樂高樂園門票" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -747,7 +763,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/140195?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_183518/20260520015831_sG3SP/jpg" loading="lazy" alt="買一送一京都東福寺 ZEN NIGHT 高級夜間觀賞門票" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -770,7 +786,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/183518?cid=2299" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="東南亞" data-tags="票券">
+  <div class="deal-card" data-cat="東南亞" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_165860/20240328095456_mzV6Z/jpg" loading="lazy" alt="買一送一 $163/人西貢早晨城市之旅一日遊" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -798,7 +814,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/165860?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_12322/20260508081000_qOQyW/jpg" loading="lazy" alt="5折優惠 $965/人富士山五合目・河口湖・忍野八海一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -826,7 +842,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/148912?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_13397/20260623032706_segFY/jpg" loading="lazy" alt="買一送一 $1,040/人茨城常陸海濱公園花海・大洗鳥居一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -854,7 +870,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/533691?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_29695/20260624031640_bKjux/png" loading="lazy" alt="買一送一 $643/人日本天橋立一日遊" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -882,7 +898,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/25439?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_251019/20241004162451_WYyOR/jpg" loading="lazy" alt="買一送一 $1,027/人京都一日遊｜貴船神社・嵐山・三千院" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -910,7 +926,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/251019?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="閃購" data-tags="票券">
+  <div class="deal-card" data-cat="閃購" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_262496/20250220100641_KvF8L/png" loading="lazy" alt="21:00閃購5折海底撈火鍋抵用券" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -938,7 +954,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/262496?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="閃購" data-tags="票券">
+  <div class="deal-card" data-cat="閃購" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_124159/20211115085521_OtT0v/jpg" loading="lazy" alt="21:00閃購5折鼎王麻辣鍋餐券" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -966,7 +982,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/124159?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="釜山">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_138477/20240703084407_AddRy/png" loading="lazy" alt="5折優惠釜山通行證 Visit Busan Pass" data-emoji="🎣" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -994,7 +1010,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/138477?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="機票">
+  <div class="deal-card" data-cat="機票" data-tags="機票" data-dest="沖繩">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_154601/20250728124818_qWTU9/jpg" loading="lazy" alt="機票5折亞洲航空 沖繩4天計劃機票" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1022,7 +1038,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/154601?cid=2299" target="_blank" rel="noopener">查看最低價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="機票">
+  <div class="deal-card" data-cat="機票" data-tags="機票" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_154003/20250124044606_Fgc0f/png" loading="lazy" alt="機票5折酷航 首爾計劃機票｜含托運行李" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1050,7 +1066,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/154003?cid=2299" target="_blank" rel="noopener">查看最低價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="機票">
+  <div class="deal-card" data-cat="機票" data-tags="機票" data-dest="新加坡">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_158429/20250204103110_TfgpF/jpg" loading="lazy" alt="機票5折酷航 新加坡計劃機票" data-emoji="🦁" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1078,7 +1094,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/158429?cid=2299" target="_blank" rel="noopener">查看最低價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_183846/20260102075133_nMUCq/jpg" loading="lazy" alt="機加酒大阪4日機加酒｜暑假限定" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1106,7 +1122,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/183846?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_20648/20260519131031_CrUHu/jpg" loading="lazy" alt="經典打卡首選富士山一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1134,7 +1150,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/591145?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21065/20260522105607_CwBld/jpg" loading="lazy" alt="雙湖無敵全景富士山雙湖全景一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1162,7 +1178,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/593949?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21067/20260522100817_EXrdF/jpg" loading="lazy" alt="網美花海必拍富士山賞花絕景一天團" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1190,7 +1206,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/593947?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21037/20260522025422_2nfFY/jpg" loading="lazy" alt="夢幻海線雙拼京都天橋立・伊根舟屋一日遊" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1218,7 +1234,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/593890?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21107/20260525070355_ZB59O/png" loading="lazy" alt="秘境合掌村京都天橋立・美山茅草屋一日遊" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1246,7 +1262,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/594086?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="親子">
+  <div class="deal-card" data-cat="日本" data-tags="親子" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21069/20260522103900_TBGOb/jpg" loading="lazy" alt="親子放電神行程淡路島賞花親親樹熊一天團" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1274,7 +1290,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/593948?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="京都">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_573379/20260204040959_HhSvH/jpg" loading="lazy" alt="日本京都奈良一日遊" data-emoji="⛩️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1302,7 +1318,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/573379?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_20804/20260521102615_p2zPu/jpg" loading="lazy" alt="買一送一韓國秋日限定賞楓一日遊" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1330,7 +1346,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/593867?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_21539/20260528094659_dmOFr/jpg" loading="lazy" alt="買一送一韓國紅葉秘境一日遊" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1358,7 +1374,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/594303?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_267164/20250110051733_mc18K/jpg" loading="lazy" alt="首爾個人色彩鑑定｜K-Beauty 88折" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1386,7 +1402,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/267164?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_166887/20240415052547_JXEeh/png" loading="lazy" alt="首爾 Ye-Lead 高級美髮沙龍｜K-Beauty 88折" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1414,7 +1430,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/166887?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_405255/20250624071218_ZZWsa/jpg" loading="lazy" alt="韓國 K-POP 偶像畫報拍攝體驗｜K-Beauty 88折" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1442,7 +1458,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/405255?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_scm_11170/20260222220437_pk4Iq/jpg" loading="lazy" alt="景福宮韓服妝容體驗｜K-Beauty 88折" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1470,7 +1486,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/259477?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_583192/20260514111225_Y9SOU/jpg" loading="lazy" alt="買一送一 $355/人首爾美食一日遊｜含韓服+海鮮放題" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1498,7 +1514,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/583192?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="東南亞" data-tags="住宿">
+  <div class="deal-card" data-cat="東南亞" data-tags="住宿" data-dest="香港">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_569732/20260528040413_VRxFZ/png" loading="lazy" alt="兩天一夜 $710/人惠州五星飯店純玩團" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1526,7 +1542,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/569732?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_142533/20230421005329_cZjlU/jpg" loading="lazy" alt="5折神券橫濱港未來萬葉俱樂部門票" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1554,7 +1570,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/142533?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="沖繩">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_159391/20250813075828_xptpq/jpg" loading="lazy" alt="沖繩 Fun Pass 超值系列" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1582,7 +1598,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/159391?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="沖繩">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_527376/20250724040938_eF1R8/jpg" loading="lazy" alt="沖繩 DMM Kariyushi 水族館門票" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1610,7 +1626,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/527376?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="沖繩">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_181495/20260205070012_6DHUo/jpg" loading="lazy" alt="Churasun 6 沖繩表演觀賞門票" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1638,7 +1654,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/181495?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_528208/20260522030638_UfvUB/jpg" loading="lazy" alt="豪華版關西樂享周遊券｜含USJ特權入場" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1666,7 +1682,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/528208?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_165534/20240323115924_PZczr/jpg" loading="lazy" alt="麗星郵輪 探索星號 Star Navigator" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1694,7 +1710,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/165534?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_604945/20260617080039_KIeTu/jpg" loading="lazy" alt="長岡煙火節新宿出發含指定座位一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1722,7 +1738,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/604945?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_601695/20260610094223_6IxJB/jpg" loading="lazy" alt="長岡花火大會名古屋出發專屬觀賞席一日遊" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1750,7 +1766,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/601695?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_549777/20260115033153_ClRFk/jpg" loading="lazy" alt="台北 XR 沉浸玩家｜消失的法老古夫金字塔VR體驗" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1778,7 +1794,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/549777?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_535777/20251028025646_09U9g/png" loading="lazy" alt="埃及木乃伊 - 永生傳說特展" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1806,7 +1822,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/535777?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_580003/20260610032603_5rpWP/jpg" loading="lazy" alt="櫻桃小丸子原作 40 週年特展" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1834,7 +1850,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/580003?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_580222/20260622080634_hYVq2/jpg" loading="lazy" alt="A World of Wonder 奇想世界特展" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1862,7 +1878,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/580222?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR">
+  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_18940/20230207094435_3PPrV/jpg" loading="lazy" alt="JR HARUKA 關西機場快線｜贈7天21GB eSIM" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1885,7 +1901,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/18940?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="eSIM">
+  <div class="deal-card" data-cat="日本" data-tags="eSIM" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_18566/20180430104240_XHgkl/jpg" loading="lazy" alt="京成電鐵 Skyliner 成田機場快線｜贈7天21GB eSIM" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1895,7 +1911,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 免換卡免設定，落地直接用</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$457</span>
+        <span class="deal-price">優惠中</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -1908,7 +1924,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/7913?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="eSIM">
+  <div class="deal-card" data-cat="日本" data-tags="eSIM" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_12156/20241030012951_vK8R0/jpg" loading="lazy" alt="大阪周遊卡一日券・二日券｜贈7天21GB eSIM" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1918,7 +1934,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 免換卡免設定，落地直接用</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$693</span>
+        <span class="deal-price">優惠中</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -1931,7 +1947,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/12156?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR">
+  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_6681/20210318103907_nRllY/jpg" loading="lazy" alt="JR PASS 東日本鐵路周遊券｜贈7天21GB eSIM" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1941,7 +1957,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 免換卡免設定，落地直接用</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$6,927</span>
+        <span class="deal-price">優惠中</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -1954,7 +1970,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/6681?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR">
+  <div class="deal-card" data-cat="日本" data-tags="eSIM|JR" data-dest="大阪">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_25778/20190625125208_iehdY/jpg" loading="lazy" alt="JR PASS 關西廣島5日券｜贈7天21GB eSIM" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -1964,7 +1980,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 免換卡免設定，落地直接用</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$3,365</span>
+        <span class="deal-price">優惠中</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -1977,7 +1993,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/20310?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="歐洲" data-tags="票券">
+  <div class="deal-card" data-cat="歐洲" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_2524/20251212083227_NcOlM/png" loading="lazy" alt="瑞士通行證含桃園機場接送折扣券$1000" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2005,7 +2021,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/2524?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="歐洲" data-tags="票券">
+  <div class="deal-card" data-cat="歐洲" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_128031/20220325100926_4WNC9/jpg" loading="lazy" alt="瑞士半價卡 Swiss Half Fare Card" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2015,7 +2031,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 附折扣碼，點複製再去訂更省一波</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$5,885</span>
+        <span class="deal-price">優惠中</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -2033,7 +2049,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/128031?cid=2299" target="_blank" rel="noopener">查看折扣 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="歐洲" data-tags="eSIM|JR">
+  <div class="deal-card" data-cat="歐洲" data-tags="eSIM|JR" data-dest="">
     <div class="badge">省15%</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_119917/20260618053120_XsqpR/png" loading="lazy" alt="罕見85折+贈eSIM歐洲鐵路全境通行證 Eurail Global Pass" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2056,7 +2072,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://www.kkday.com/zh-tw/product/119917?cid=2299" target="_blank" rel="noopener">立即領優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="機票">
+  <div class="deal-card" data-cat="機票" data-tags="機票" data-dest="東京">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_259305/20241018115500_BBQ6A/png" loading="lazy" alt="限7/8出發樂桃航空東京5天計劃機票｜含托運行李" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2087,7 +2103,7 @@ footer strong{color:#8a5830}
     <span class="sec-count">12 筆優惠</span>
   </div>
   <div class="cards-grid">
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-001497/M_PIC2503-001497.jpg" loading="lazy" alt="嘉義二日｜618第二人半價＆免小費｜阿里山風情.歐風佐登妮絲.台中LALAPOR" data-emoji="🌙" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2110,7 +2126,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=4dd4c408-f0f0-43e2-8b23-039bf4cf1c9a&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1312-255560/M_PIC1312-255560.jpg" loading="lazy" alt="新北旅遊｜免小費｜福爾摩沙北海岸藝術季.深度人文路線1日" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2133,7 +2149,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=cbb9f1e8-4186-42b4-9e4b-45ab0e5ec310&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2409-001899/M_PIC2409-001899.jpg" loading="lazy" alt="限量免小費~廣島旅遊｜世界遺產嚴島神社.出雲大社.松江城.岡山後樂園.倉敷美觀地" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2156,7 +2172,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=5c3f01bd-0d43-41a6-bcbd-999a015da2af&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000327/M_PIC2503-000327.jpg" loading="lazy" alt="限量促銷免小費.東北旅遊|秘境五色沼.銀山溫泉街.角館武家屋敷.郭公糰子.山形熊" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2179,7 +2195,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=6ef9ed9c-5e5a-4467-a40d-3ebbb151a343&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="JR">
+  <div class="deal-card" data-cat="其他" data-tags="JR" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1605-012506/M_PIC1605-012506.jpg" loading="lazy" alt="玩樂369旗艦丹麥挪威12日｜三峽灣、三纜車、勞馬景觀鐵路、兩晚五星｜夏季版．免" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2202,7 +2218,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=2c61d8db-134d-44ba-ad89-094aff38cdd6&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2305-002626/M_PIC2305-002626.jpg" loading="lazy" alt="最高省1萬｜旗艦德瑞10日｜少女峰．楚格峰．新天鵝堡．國王湖遊船．景觀火車．米其" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2225,7 +2241,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=a7614d8d-a36a-45ce-a0bf-5d9f844a10e5&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1906-012448/M_PIC1906-012448.jpg" loading="lazy" alt="早鳥免小費》南非精選10日│全程四星、雙點進出、開普敦、花園大道、鮑魚農場、動物" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2248,7 +2264,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=8fb44d20-e173-4f53-a96e-437b7516a68a&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2003-004561/M_PIC2003-004561.jpg" loading="lazy" alt="賀歲折5000｜荷比法三遊船10日｜羅浮宮．凡爾賽宮．童話羊角村．一晚五星．高速" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2271,7 +2287,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=c9ee2086-bd74-40b7-8bee-25b5611544a4&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2404-000904/M_PIC2404-000904.jpg" loading="lazy" alt="早鳥免小費》突尼西亞經典11日｜忘憂傑爾巴島、藍白海岸、綠洲探索、撒哈拉浪遊、八" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2294,7 +2310,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=42dfbda4-226e-4d33-b3dc-8dcec24756f9&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="日本" data-tags="票券">
+  <div class="deal-card" data-cat="日本" data-tags="票券" data-dest="北海道">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2503-000056/M_PIC2503-000056.jpg" loading="lazy" alt="北海道｜早鳥免小費｜阿寒湖LUMINA.薰衣草六合一.十勝千年之森.流冰館.小樽" data-emoji="❄️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2304,7 +2320,7 @@ footer strong{color:#8a5830}
       <p class="card-reason">💡 台灣最大旅行社，售後服務有保障</p>
       <div class="card-price">
         
-        <span class="deal-price">NT$52,900</span>
+        <span class="deal-price">NT$51,900</span>
         <span class="price-sfx">起</span>
       </div>
       
@@ -2317,7 +2333,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=7b8e7cd1-ebc7-4991-9b5c-de8202097e4e&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="其他" data-tags="票券">
+  <div class="deal-card" data-cat="其他" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC1701-005644/M_PIC1701-005644.jpg" loading="lazy" alt="賀歲折5000│旗艦西班牙聖家堂．阿爾罕布拉宮．鋸齒山．佛朗明哥舞．高速火車．免" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2340,7 +2356,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://travel.liontravel.com/detail?NormGroupID=2432571a-a64a-4e01-b916-02f01ce8eb9b&Origin=LION&Origin=UNI&Platform=APP&GroupID=26JT901TR6-ZP&mtld=00001385&mtl=lionaff&utm_source=lionaffiliate&utm_medium=cpa" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="票券">
+  <div class="deal-card" data-cat="台灣" data-tags="票券" data-dest="">
     <div class="badge code-badge">優惠連結</div>
     <div class="card-img"><img src="https://static.liontech.com.tw/cmspic/PIC2207-000921/M_PIC2207-000921.jpg" loading="lazy" alt="台中旅遊｜免小費~熱血國際踩舞嘉年華.大口吃肉~森森燒肉.霧峰林家~聽故事.做自" data-emoji="🌙" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2371,7 +2387,7 @@ footer strong{color:#8a5830}
     <span class="sec-count">9 筆優惠</span>
   </div>
   <div class="cards-grid">
-  <div class="deal-card" data-cat="東南亞" data-tags="票券">
+  <div class="deal-card" data-cat="東南亞" data-tags="票券" data-dest="曼谷">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/1mc2w12000em9x3802E43_C_600_400_R5_Q80.jpg" loading="lazy" alt="一起去曼谷" data-emoji="🛕" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2394,7 +2410,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz7j" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="自由行|機票">
+  <div class="deal-card" data-cat="機票" data-tags="自由行|機票" data-dest="清邁">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0586912000sqcig1c0646_C_600_400_R5_Q80.jpg" loading="lazy" alt="台北-清邁機票來回自由行" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2417,7 +2433,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/96k5bm" target="_blank" rel="noopener">查看最低價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="">
     
     <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/0Q1D91IxHP8p76PQaXXan7e_V0UTBuc463Ak7eWPUDM/g:ce/q:95/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2hwaW1nL2hwL2Jhbm5lci8zNTZ4MTMwLzM1NngxMzBfMjAyNTA5MDlMSmFsbDkucG5n.png" loading="lazy" alt="易遊網機加酒" data-emoji="🌍" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2440,7 +2456,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz6v" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="韓國" data-tags="票券">
+  <div class="deal-card" data-cat="韓國" data-tags="票券" data-dest="首爾">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0580w12000som6dqsD611_C_600_400_R5_Q80.jpg" loading="lazy" alt="暢玩首爾" data-emoji="🇰🇷" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2463,7 +2479,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz84" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="東南亞" data-tags="票券">
+  <div class="deal-card" data-cat="東南亞" data-tags="票券" data-dest="香港">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/20030s000000hzn0n9310_C_600_400_R5_Q80.jpg" loading="lazy" alt="香港最好玩" data-emoji="🏙️" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2486,7 +2502,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz8e" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="東京">
     
     <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/GXmJ6i8eFsnsLG6idetfvXdt8F9na4WMHQOoEgH10u4/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9UWU9fNjAweDYwMC5wbmc.png" loading="lazy" alt="台北-東京機加酒" data-emoji="🗼" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2509,7 +2525,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz94" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="大阪">
     
     <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/c6ukbIj3kGGSIeSjsUqP4GPB_4wPALJtcB6pqT0kaG8/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PU0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="台北-大阪機加酒" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2532,7 +2548,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kys3" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="沖繩">
     
     <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/NSpq3DVJZ7x4es2VT_GIrxpQ4q41ihJngKgp_1_Fy0I/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9PS0FfNjAweDYwMC5wbmc.png" loading="lazy" alt="台北-沖繩(那霸)機加酒" data-emoji="🌺" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2555,7 +2571,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://eztravel.tw/98kz9j" target="_blank" rel="noopener">查看優惠 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="機票" data-tags="票券">
+  <div class="deal-card" data-cat="機票" data-tags="票券" data-dest="九州">
     
     <div class="card-img"><img src="https://image.cdn-eztravel.com.tw/Zri2YteDMF53CkXoBrNGePhneZgx86f3s_qg6F7yjgc/rs:fill:500:390:1/g:ce/q:100/aHR0cHM6Ly9ldmVudC5jZG4tZXp0cmF2ZWwuY29tLnR3L2V2ZW50cy9haXJ0aWNrZXQvZmVlZC9GVUtfNjAweDYwMC5wbmc.png" loading="lazy" alt="台北-福岡機加酒" data-emoji="🍜" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2586,7 +2602,7 @@ footer strong{color:#8a5830}
     <span class="sec-count">5 筆優惠</span>
   </div>
   <div class="cards-grid">
-  <div class="deal-card" data-cat="台灣" data-tags="住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="住宿" data-dest="">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0584q12000soiou635737_C_600_400_R5_Q80.jpg" loading="lazy" alt="福爾摩沙花園酒店｜2026台南新飯店" data-emoji="🏯" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2609,7 +2625,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://hotel.eztravel.com.tw/detail?CityID=3847&HotelID=133206303" target="_blank" rel="noopener">立即比價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="住宿" data-dest="">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583g12000sm8bbs69F84_C_600_400_R5_Q80.jpg" loading="lazy" alt="鹿港澄悅酒店｜易遊網獨家" data-emoji="🏮" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2632,7 +2648,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://hotel.eztravel.com.tw/detail?CityID=7811&HotelID=105469356" target="_blank" rel="noopener">立即比價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="住宿" data-dest="">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0222y12000ly4qkbv7C3C_C_600_400_R5_Q80.jpg" loading="lazy" alt="日月潭泰湖樓溫泉酒店｜獨家一泊二食" data-emoji="🌊" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2655,7 +2671,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://hotel.eztravel.com.tw/detail?CityID=7524&HotelID=840834" target="_blank" rel="noopener">立即比價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="親子|住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="親子|住宿" data-dest="">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0204l12000a5cf3pqD3D0_C_600_400_R5_Q80.jpg" loading="lazy" alt="台中裕元花園酒店｜暑假贈兒童免費住" data-emoji="🌙" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2678,7 +2694,7 @@ footer strong{color:#8a5830}
       <a class="card-btn" href="https://hotel.eztravel.com.tw/detail?CityID=3849&HotelID=890668" target="_blank" rel="noopener">立即比價 →</a>
     </div>
   </div>
-  <div class="deal-card" data-cat="台灣" data-tags="住宿">
+  <div class="deal-card" data-cat="台灣" data-tags="住宿" data-dest="">
     
     <div class="card-img"><img src="https://img1.cdn-eztravel.com.tw/images/0583412000snq29ww784D_C_600_400_R5_Q80.jpg" loading="lazy" alt="鹿港永樂酒店｜易遊網一泊二食" data-emoji="🏮" onerror="this.style.display='none';var p=this.parentElement;p.style.cssText='display:flex;align-items:center;justify-content:center;height:100%;font-size:70px';p.textContent=this.dataset.emoji"></div>
     <div class="card-body">
@@ -2732,7 +2748,7 @@ footer strong{color:#8a5830}
 </section>
 
 <footer>
-  <strong>愛可推薦</strong> 每日早上 9:00 自動整理 · 2026/07/05 11:05 更新<br>
+  <strong>愛可推薦</strong> 每日早上 9:00 自動整理 · 2026/07/05 11:16 更新<br>
   以上價格及優惠資訊僅供參考，實際以各平台官網為準，請於購買前再次確認。<br>
   本站為非官方資訊整合平台，與 KKday、雄獅旅遊、易遊網無直接從屬關係。<br>
   所有商品圖片及名稱版權歸屬原始平台所有。<br>
@@ -2828,6 +2844,153 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/aiko-deals/sw.js');
   });
 }
+</script>
+
+<!-- ── 相關推薦底部抽屜 ── -->
+<div class="rec-drawer" id="rec-drawer" role="complementary" aria-label="相關推薦">
+  <div class="rec-drawer-hdr">
+    <span class="rec-drawer-title" id="rec-title">你可能也需要…</span>
+    <button class="rec-drawer-close" id="rec-close" aria-label="關閉推薦">✕</button>
+  </div>
+  <div class="rec-cards" id="rec-cards"></div>
+</div>
+
+<script>
+(function() {
+  var drawer = document.getElementById('rec-drawer');
+  var titleEl = document.getElementById('rec-title');
+  var cardsEl = document.getElementById('rec-cards');
+  if (!drawer) return;
+  var closeTimer;
+
+  function buildMiniCard(card) {
+    var titleTxt = (card.querySelector('.card-title') || {}).textContent || '';
+    var imgEl = card.querySelector('.card-img img');
+    var priceEl = card.querySelector('.deal-price');
+    var btnEl = card.querySelector('a.card-btn');
+    var url = btnEl ? btnEl.href : '#';
+    var price = priceEl ? priceEl.textContent : '';
+    var emoji = (imgEl && imgEl.dataset.emoji) ? imgEl.dataset.emoji : '✈️';
+
+    var a = document.createElement('a');
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.className = 'rec-card';
+
+    if (imgEl && imgEl.src && imgEl.naturalWidth > 0) {
+      var img = document.createElement('img');
+      img.className = 'rec-card-img';
+      img.src = imgEl.src;
+      img.loading = 'lazy';
+      img.alt = titleTxt;
+      a.appendChild(img);
+    } else {
+      var ph = document.createElement('div');
+      ph.className = 'rec-card-ph';
+      ph.textContent = emoji;
+      a.appendChild(ph);
+    }
+
+    var body = document.createElement('div');
+    body.className = 'rec-card-body';
+    var titleDiv = document.createElement('div');
+    titleDiv.className = 'rec-card-title';
+    titleDiv.textContent = titleTxt;
+    body.appendChild(titleDiv);
+    if (price) {
+      var priceDiv = document.createElement('div');
+      priceDiv.className = 'rec-card-price';
+      priceDiv.textContent = price + ' 起';
+      body.appendChild(priceDiv);
+    }
+    a.appendChild(body);
+    return a;
+  }
+
+  // 互補商品對照表
+  var COMP = {
+    '迪士尼': ['eSIM','住宿','JR'],
+    '環球':   ['eSIM','住宿','JR'],
+    'JR':     ['eSIM','住宿','迪士尼','環球'],
+    'eSIM':   ['住宿','JR','迪士尼','機票'],
+    '住宿':   ['eSIM','JR','迪士尼','環球'],
+    '機票':   ['住宿','eSIM'],
+    '親子':   ['迪士尼','eSIM','住宿'],
+    '自由行': ['eSIM','住宿','JR'],
+  };
+
+  function scoreCard(card, dest, cat, myTags) {
+    var s = 0;
+    var cDest = card.dataset.dest || '';
+    var cCat  = card.dataset.cat  || '';
+    var cTags = card.dataset.tags || '';
+    if (dest && cDest && cDest === dest) s += 10;
+    else if (cat === cCat) s += 2;
+    for (var i = 0; i < myTags.length; i++) {
+      var rec = COMP[myTags[i]] || [];
+      for (var j = 0; j < rec.length; j++) {
+        if (cTags.indexOf(rec[j]) !== -1) { s += 5; break; }
+      }
+    }
+    if (card.querySelector('.card-img img')) s += 1;
+    return s;
+  }
+
+  function showRecs(clickedCard) {
+    var dest   = clickedCard.dataset.dest || '';
+    var cat    = clickedCard.dataset.cat  || '';
+    var myTags = (clickedCard.dataset.tags || '').split('|').filter(Boolean);
+
+    var allCards = [].slice.call(document.querySelectorAll('.deal-card'))
+      .filter(function(c) { return c !== clickedCard; });
+
+    var scored = allCards.map(function(c) {
+      return { card: c, score: scoreCard(c, dest, cat, myTags) };
+    }).filter(function(s) {
+      return s.score > 0;
+    }).sort(function(a, b) {
+      return b.score - a.score;
+    }).slice(0, 5).map(function(s) { return s.card; });
+
+    if (scored.length < 2) return;
+
+    var label = dest || (cat && cat !== '其他' ? cat : '') || '相關行程';
+    titleEl.textContent = '🗺️ ' + label + ' 還有這些値得看';
+    cardsEl.innerHTML = '';
+    scored.forEach(function(c) { cardsEl.appendChild(buildMiniCard(c)); });
+
+    drawer.classList.add('open');
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(function() { drawer.classList.remove('open'); }, 9000);
+  }
+
+  // 點擊 CTA 按鈕後觸發（因為 target=_blank，用戶仍留在頁面）
+  [].slice.call(document.querySelectorAll('a.card-btn')).forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var card = btn.closest('.deal-card');
+      if (card) setTimeout(function() { showRecs(card); }, 280);
+    });
+  });
+
+  // 關閉按鈕
+  var closeBtn = document.getElementById('rec-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      drawer.classList.remove('open');
+      clearTimeout(closeTimer);
+    });
+  }
+
+  // 點空白處關閉
+  document.addEventListener('click', function(e) {
+    if (!drawer.classList.contains('open')) return;
+    if (!drawer.contains(e.target) && !e.target.closest('.card-btn')) {
+      drawer.classList.remove('open');
+      clearTimeout(closeTimer);
+    }
+  });
+})();
 </script>
 </body>
 </html>

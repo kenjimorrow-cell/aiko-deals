@@ -88,11 +88,12 @@ footer a{color:#b08060}
 /* 折扣碼快速查表 */
 .code-quick-box{background:linear-gradient(135deg,#fffbf0,#fff5e0);border:2px solid #e8c870;border-radius:16px;padding:20px 22px;margin:24px 0}
 .code-quick-box h2{font-size:17px;font-weight:800;color:#7a4010;margin-bottom:14px}
-.code-table{width:100%;border-collapse:collapse;font-size:13px}
-.code-table th{background:#f5dfa0;color:#7a4010;padding:8px 12px;text-align:left;border-bottom:2px solid #e0c070}
-.code-table td{padding:8px 12px;border-bottom:1px solid #f0e4c0;vertical-align:middle}
+.code-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
+.code-table{width:100%;min-width:480px;border-collapse:collapse;font-size:13px}
+.code-table th{background:#f5dfa0;color:#7a4010;padding:10px 14px;text-align:left;border-bottom:2px solid #e0c070;white-space:nowrap}
+.code-table td{padding:10px 14px;border-bottom:1px solid #f0e4c0;vertical-align:middle;white-space:nowrap}
 .code-table tr:last-child td{border-bottom:none}
-.code-table td:first-child{font-family:monospace;font-weight:800;font-size:13px;color:#5a2e00;letter-spacing:.5px}
+.code-table td:first-child{font-family:monospace;font-weight:900;font-size:14px;color:#5a2e00;letter-spacing:.5px}
 .code-tip{font-size:12px;color:#9a7030;margin-top:12px;padding:8px 12px;background:#fff;border-radius:8px;border-left:3px solid #e8c870}
 @media(max-width:600px){
   .hdr-nav{display:none}
@@ -131,7 +132,7 @@ footer a{color:#b08060}
 
 <div class="code-quick-box">
   <h2>💰 KKday 折扣碼快速查（2026年7月最新）</h2>
-  <table class="code-table">
+  <div class="code-table-wrap"><table class="code-table">
     <tr><th>折扣碼</th><th>適用範圍</th><th>優惠內容</th><th>有效期</th></tr>
     <tr><td>KKAFFTOUR88</td><td>全站行程商品</td><td>88折</td><td>長期有效</td></tr>
     <tr><td>APP90</td><td>App 首次購買</td><td>90折</td><td>長期有效</td></tr>
@@ -143,7 +144,7 @@ footer a{color:#b08060}
     <tr><td>SWPQ5</td><td>富國島水上樂園</td><td>5折</td><td>限時搶購</td></tr>
     <tr><td>KKFLY</td><td>清倉機票商品</td><td>折300元</td><td>限時</td></tr>
     <tr><td>EXCUZ2000</td><td>郵輪訂單滿3萬</td><td>折2000元</td><td>限時</td></tr>
-  </table>
+  </table></div>
   <p class="code-tip">💡 使用方式：選好商品加入購物車 → 結帳頁輸入折扣碼 → 點「套用」確認折扣後付款</p>
 </div>
 

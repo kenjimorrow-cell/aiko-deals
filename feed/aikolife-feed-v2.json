@@ -1,0 +1,801 @@
+{
+  "generated_at": "2026-07-06T16:32:06.725032+08:00",
+  "source": "AikoTravel",
+  "items": [
+    {
+      "id": "article:kkday-discount-2026",
+      "type": "article",
+      "title": "KKday折扣碼2026整理｜最新優惠碼＋省錢攻略",
+      "summary": "整理2026年最新KKday折扣碼與省錢攻略！閃購5折、早鳥85折、App限定優惠，附KKday使用教學與購買注意事項。",
+      "url": "https://aikotravel.github.io/kkday-discount-2026.html",
+      "tags": [
+        "行程"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-15",
+      "content_hash": "47829715f578fc14"
+    },
+    {
+      "id": "article:japan-travel-guide",
+      "type": "article",
+      "title": "日本自由行完整攻略（2026最新版）",
+      "summary": "2026日本自由行完整攻略：各地區特色、最佳旅遊季節、費用估算、JR Pass、eSIM、迪士尼票券購買建議，一篇看完搞定行前規劃。",
+      "url": "https://aikotravel.github.io/japan-travel-guide.html",
+      "tags": [
+        "日本",
+        "行程"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-18",
+      "content_hash": "62c2da41fed1674b"
+    },
+    {
+      "id": "article:tokyo-5day-itinerary",
+      "type": "article",
+      "title": "東京5天4夜行程規劃（2026）｜含KKday推薦票券",
+      "summary": "2026東京5天4夜詳細行程！淺草、晴空塔、迪士尼、原宿、涉谷、新宿一次規劃，附費用估算與KKday門票購買建議。",
+      "url": "https://aikotravel.github.io/tokyo-5day-itinerary.html",
+      "tags": [
+        "日本",
+        "行程",
+        "門票"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-20",
+      "content_hash": "fb2d5670c488da6c"
+    },
+    {
+      "id": "article:okinawa-family-travel",
+      "type": "article",
+      "title": "沖繩親子自由行攻略｜景點、飯店、行程規劃",
+      "summary": "沖繩親子旅遊完整攻略！美麗海水族館、兒童王國、恩納海灘、沖繩世界，附5天4夜行程建議與親子飯店推薦。",
+      "url": "https://aikotravel.github.io/okinawa-family-travel.html",
+      "tags": [
+        "日本",
+        "飯店",
+        "行程",
+        "親子"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-06-22",
+      "content_hash": "a72802dbbefbcfac"
+    },
+    {
+      "id": "article:osaka-usj-guide",
+      "type": "article",
+      "title": "大阪環球影城攻略2026｜門票、必玩設施、行程規劃",
+      "summary": "大阪環球影城完整攻略！任天堂世界、哈利波特、門票種類、Express Pass、一日行程時間建議，附KKday購票連結。",
+      "url": "https://aikotravel.github.io/osaka-usj-guide.html",
+      "tags": [
+        "日本",
+        "行程",
+        "門票"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-24",
+      "content_hash": "07989c4512057135"
+    },
+    {
+      "id": "article:korea-travel-guide",
+      "type": "article",
+      "title": "韓國自由行懶人包（2026）｜首爾行程、費用、票券整理",
+      "summary": "2026韓國首爾自由行懶人包！必去景點、費用估算、購物退稅、eSIM建議，搭配KKday韓國票券攻略一次搞定。",
+      "url": "https://aikotravel.github.io/korea-travel-guide.html",
+      "tags": [
+        "韓國",
+        "行程",
+        "門票"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-26",
+      "content_hash": "91a8b8e8aba11c3d"
+    },
+    {
+      "id": "article:japan-flight-cheap",
+      "type": "article",
+      "title": "日本機票什麼時候買最便宜？2026搶票技巧整理",
+      "summary": "日本機票省錢攻略：最佳訂票時機、旺淡季票價差異、廉航vs一般航空比較、機加酒vs自組行程分析，完整2026版整理。",
+      "url": "https://aikotravel.github.io/japan-flight-cheap.html",
+      "tags": [
+        "日本",
+        "機票"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-28",
+      "content_hash": "608499e1ed602839"
+    },
+    {
+      "id": "article:lion-travel-review",
+      "type": "article",
+      "title": "雄獅旅遊評價好嗎？2026客觀評比＋平台比較",
+      "summary": "雄獅旅遊評價客觀分析：優缺點、適合旅客類型、與KKday和易遊網比較，幫你決定是否選擇雄獅旅遊訂行程。",
+      "url": "https://aikotravel.github.io/lion-travel-review.html",
+      "tags": [
+        "旅遊"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-06-30",
+      "content_hash": "73adb5bbdaeeb26c"
+    },
+    {
+      "id": "article:thailand-bangkok-guide",
+      "type": "article",
+      "title": "泰國曼谷自由行攻略（2026）｜行程、費用、景點整理",
+      "summary": "2026泰國曼谷自由行完整攻略！大皇宮、Chatuchak市集、費用估算、交通攻略、必吃美食，附KKday曼谷票券推薦。",
+      "url": "https://aikotravel.github.io/thailand-bangkok-guide.html",
+      "tags": [
+        "東南亞",
+        "行程",
+        "美食"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-01",
+      "content_hash": "90f796bcdf723dd0"
+    },
+    {
+      "id": "article:taiwan-hotel-guide",
+      "type": "article",
+      "title": "台灣飯店精選攻略（2026）｜北中南住宿推薦＋訂房技巧",
+      "summary": "2026台灣各地飯店精選推薦！台北、台中、高雄、花蓮、台南、墾丁、溫泉飯店攻略，附訂房省錢技巧與平台比較。",
+      "url": "https://aikotravel.github.io/taiwan-hotel-guide.html",
+      "tags": [
+        "台灣",
+        "飯店",
+        "行程"
+      ],
+      "placement_hint": "延伸閱讀",
+      "placement_zone": "related",
+      "source_label": "AikoTravel",
+      "published": "2026-07-03",
+      "content_hash": "f463bbf863948307"
+    },
+    {
+      "id": "deal:/detail",
+      "type": "deal",
+      "title": "福爾摩沙花園酒店｜2026台南新飯店",
+      "summary": "台南｜限時85折・暑假$2,550起",
+      "url": "https://hotel.eztravel.com.tw/detail?CityID=3847&HotelID=133206303",
+      "tags": [
+        "台灣",
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "40552478965f32a1"
+    },
+    {
+      "id": "deal:/detail",
+      "type": "deal",
+      "title": "鹿港澄悅酒店｜易遊網獨家",
+      "summary": "鹿港｜含早餐＋贈白蘭氏雞精券＆森活館入場券",
+      "url": "https://hotel.eztravel.com.tw/detail?CityID=7811&HotelID=105469356",
+      "tags": [
+        "台灣",
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "a9813ab15c90e111"
+    },
+    {
+      "id": "deal:/detail",
+      "type": "deal",
+      "title": "日月潭泰湖樓溫泉酒店｜獨家一泊二食",
+      "summary": "日月潭｜易遊獨家・含早餐＋晚餐",
+      "url": "https://hotel.eztravel.com.tw/detail?CityID=7524&HotelID=840834",
+      "tags": [
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "2149b26aedf84c21"
+    },
+    {
+      "id": "deal:/detail",
+      "type": "deal",
+      "title": "台中裕元花園酒店｜暑假贈兒童免費住",
+      "summary": "台中｜贈1-2位兒童免費住・2大1小含早餐",
+      "url": "https://hotel.eztravel.com.tw/detail?CityID=3849&HotelID=890668",
+      "tags": [
+        "台灣",
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "eae5a2a1c1958e5a"
+    },
+    {
+      "id": "deal:/detail",
+      "type": "deal",
+      "title": "鹿港永樂酒店｜易遊網一泊二食",
+      "summary": "鹿港｜萬豪 Tribute Portfolio・含早餐＋晚餐",
+      "url": "https://hotel.eztravel.com.tw/detail?CityID=7811&HotelID=9350178",
+      "tags": [
+        "台灣",
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "666af3e3169315f8"
+    },
+    {
+      "id": "deal:/zh-tw/product/287665",
+      "type": "deal",
+      "title": "🍁【月底閃購】京都祕境一日遊｜勝尾寺・愛宕念佛寺・嵐山竹林",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/287665",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "3afcfbeef0f05b8d"
+    },
+    {
+      "id": "deal:/zh-tw/product/2358",
+      "type": "deal",
+      "title": "🎭【月底閃購買一送一】首爾 NANTA 亂打秀",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/2358",
+      "tags": [
+        "韓國"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "d39fca42f10b26be"
+    },
+    {
+      "id": "deal:/zh-tw/product/579222",
+      "type": "deal",
+      "title": "👻【月底閃購買一送一】伊藤潤二展｜恐怖漫畫大師特展",
+      "summary": "台北",
+      "url": "https://www.kkday.com/zh-tw/product/579222",
+      "tags": [
+        "台灣"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "db55c843c5261e92"
+    },
+    {
+      "id": "deal:/zh-tw/product/100556",
+      "type": "deal",
+      "title": "🏖️【5折狂歡】富國島太陽世界水上樂園門票",
+      "summary": "越南",
+      "url": "https://www.kkday.com/zh-tw/product/100556",
+      "tags": [
+        "東南亞",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "2eeb4dcb7fad3dda"
+    },
+    {
+      "id": "deal:/zh-tw/product/140195",
+      "type": "deal",
+      "title": "🧱【買一送一】韓國樂高樂園門票",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/140195",
+      "tags": [
+        "韓國",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "37ddf232c0403489"
+    },
+    {
+      "id": "deal:/zh-tw/product/183518",
+      "type": "deal",
+      "title": "🏮【買一送一】京都東福寺 ZEN NIGHT 高級夜間觀賞門票",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/183518",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "dc97ba5fd4e5e5ac"
+    },
+    {
+      "id": "deal:/zh-tw/product/165860",
+      "type": "deal",
+      "title": "🇻🇳【買一送一 $163/人】西貢早晨城市之旅一日遊",
+      "summary": "越南",
+      "url": "https://www.kkday.com/zh-tw/product/165860",
+      "tags": [
+        "東南亞",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "39d5b81004a9a43d"
+    },
+    {
+      "id": "deal:/zh-tw/product/148912",
+      "type": "deal",
+      "title": "🗻【5折優惠 $965/人】富士山五合目・河口湖・忍野八海一日遊",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/148912",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "d39fd449f3849d49"
+    },
+    {
+      "id": "deal:/zh-tw/product/533691",
+      "type": "deal",
+      "title": "🌸【買一送一 $1,040/人】茨城常陸海濱公園花海・大洗鳥居一日遊",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/533691",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "5d20cd656430585d"
+    },
+    {
+      "id": "deal:/zh-tw/product/25439",
+      "type": "deal",
+      "title": "🌊【買一送一 $643/人】日本天橋立一日遊",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/25439",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "a545657be9152619"
+    },
+    {
+      "id": "deal:/zh-tw/product/251019",
+      "type": "deal",
+      "title": "⛩️【買一送一 $1,027/人】京都一日遊｜貴船神社・嵐山・三千院",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/251019",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "703335fa550f5152"
+    },
+    {
+      "id": "deal:/zh-tw/product/262496",
+      "type": "deal",
+      "title": "🍲【21:00閃購5折】海底撈火鍋抵用券",
+      "summary": "台北",
+      "url": "https://www.kkday.com/zh-tw/product/262496",
+      "tags": [
+        "台灣",
+        "美食"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "042eb28aa8e2b871"
+    },
+    {
+      "id": "deal:/zh-tw/product/124159",
+      "type": "deal",
+      "title": "🌶️【21:00閃購5折】鼎王麻辣鍋餐券",
+      "summary": "台北",
+      "url": "https://www.kkday.com/zh-tw/product/124159",
+      "tags": [
+        "台灣",
+        "美食"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "5e72bfc7a620c2d5"
+    },
+    {
+      "id": "deal:/zh-tw/product/138477",
+      "type": "deal",
+      "title": "🇰🇷【5折優惠】釜山通行證 Visit Busan Pass",
+      "summary": "釜山",
+      "url": "https://www.kkday.com/zh-tw/product/138477",
+      "tags": [
+        "旅遊"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "67de661a8c0ff4a8"
+    },
+    {
+      "id": "deal:/zh-tw/product/154601",
+      "type": "deal",
+      "title": "✈️【機票5折】亞洲航空 沖繩4天計劃機票",
+      "summary": "沖繩",
+      "url": "https://www.kkday.com/zh-tw/product/154601",
+      "tags": [
+        "日本",
+        "機票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "cd0393a3bf4ee720"
+    },
+    {
+      "id": "deal:/zh-tw/product/154003",
+      "type": "deal",
+      "title": "✈️【機票5折】酷航 首爾計劃機票｜含托運行李",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/154003",
+      "tags": [
+        "韓國",
+        "機票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "228c45ad10d1384b"
+    },
+    {
+      "id": "deal:/zh-tw/product/158429",
+      "type": "deal",
+      "title": "✈️【機票5折】酷航 新加坡計劃機票",
+      "summary": "新加坡",
+      "url": "https://www.kkday.com/zh-tw/product/158429",
+      "tags": [
+        "東南亞",
+        "機票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "7b407115b93a8fd5"
+    },
+    {
+      "id": "deal:/zh-tw/product/183846",
+      "type": "deal",
+      "title": "🏨【機加酒】大阪4日機加酒｜暑假限定",
+      "summary": "大阪",
+      "url": "https://www.kkday.com/zh-tw/product/183846",
+      "tags": [
+        "日本"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "41672582703cb462"
+    },
+    {
+      "id": "deal:/zh-tw/product/591145",
+      "type": "deal",
+      "title": "【經典打卡首選】富士山一日遊",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/591145",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "ba8770e5693fb073"
+    },
+    {
+      "id": "deal:/zh-tw/product/593949",
+      "type": "deal",
+      "title": "【雙湖無敵全景】富士山雙湖全景一日遊",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/593949",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "c1350b5e88220c2a"
+    },
+    {
+      "id": "deal:/zh-tw/product/593947",
+      "type": "deal",
+      "title": "【網美花海必拍】富士山賞花絕景一天團",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/593947",
+      "tags": [
+        "日本"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "34f801e5eaf2ab60"
+    },
+    {
+      "id": "deal:/zh-tw/product/593890",
+      "type": "deal",
+      "title": "【夢幻海線雙拼】京都天橋立・伊根舟屋一日遊",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/593890",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "66a1f2755889a32f"
+    },
+    {
+      "id": "deal:/zh-tw/product/594086",
+      "type": "deal",
+      "title": "【秘境合掌村】京都天橋立・美山茅草屋一日遊",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/594086",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "2dd18eec97e02216"
+    },
+    {
+      "id": "deal:/zh-tw/product/593948",
+      "type": "deal",
+      "title": "【親子放電神行程】淡路島賞花親親樹熊一天團",
+      "summary": "大阪",
+      "url": "https://www.kkday.com/zh-tw/product/593948",
+      "tags": [
+        "日本",
+        "行程",
+        "親子"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "9be5c675ef7b5dc0"
+    },
+    {
+      "id": "deal:/zh-tw/product/573379",
+      "type": "deal",
+      "title": "日本京都奈良一日遊",
+      "summary": "京都",
+      "url": "https://www.kkday.com/zh-tw/product/573379",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "a716d0c984c40c54"
+    },
+    {
+      "id": "deal:/zh-tw/product/593867",
+      "type": "deal",
+      "title": "【買一送一】韓國秋日限定賞楓一日遊",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/593867",
+      "tags": [
+        "韓國",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "0f62eca72ff67a02"
+    },
+    {
+      "id": "deal:/zh-tw/product/594303",
+      "type": "deal",
+      "title": "【買一送一】韓國紅葉秘境一日遊",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/594303",
+      "tags": [
+        "韓國",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "3f5ee544f0f3c2d5"
+    },
+    {
+      "id": "deal:/zh-tw/product/267164",
+      "type": "deal",
+      "title": "首爾個人色彩鑑定｜K-Beauty 88折",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/267164",
+      "tags": [
+        "韓國"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "dc41dfa86fded174"
+    },
+    {
+      "id": "deal:/zh-tw/product/166887",
+      "type": "deal",
+      "title": "首爾 Ye-Lead 高級美髮沙龍｜K-Beauty 88折",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/166887",
+      "tags": [
+        "韓國"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "3cd41e2674b1be75"
+    },
+    {
+      "id": "deal:/zh-tw/product/405255",
+      "type": "deal",
+      "title": "韓國 K-POP 偶像畫報拍攝體驗｜K-Beauty 88折",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/405255",
+      "tags": [
+        "韓國"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "1b239486a8200976"
+    },
+    {
+      "id": "deal:/zh-tw/product/259477",
+      "type": "deal",
+      "title": "景福宮韓服妝容體驗｜K-Beauty 88折",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/259477",
+      "tags": [
+        "韓國"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "1d4299cd709d2079"
+    },
+    {
+      "id": "deal:/zh-tw/product/583192",
+      "type": "deal",
+      "title": "【買一送一 $355/人】首爾美食一日遊｜含韓服+海鮮放題",
+      "summary": "首爾",
+      "url": "https://www.kkday.com/zh-tw/product/583192",
+      "tags": [
+        "韓國",
+        "門票",
+        "美食"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "1420eaca59597a61"
+    },
+    {
+      "id": "deal:/zh-tw/product/569732",
+      "type": "deal",
+      "title": "【兩天一夜 $710/人】惠州五星飯店純玩團",
+      "summary": "香港",
+      "url": "https://www.kkday.com/zh-tw/product/569732",
+      "tags": [
+        "飯店"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "12781b98f00523fc"
+    },
+    {
+      "id": "deal:/zh-tw/product/142533",
+      "type": "deal",
+      "title": "【5折神券】橫濱港未來萬葉俱樂部門票",
+      "summary": "東京",
+      "url": "https://www.kkday.com/zh-tw/product/142533",
+      "tags": [
+        "日本",
+        "門票"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "5ca7d503a339762e"
+    },
+    {
+      "id": "deal:/zh-tw/product/159391",
+      "type": "deal",
+      "title": "沖繩 Fun Pass 超值系列",
+      "summary": "沖繩",
+      "url": "https://www.kkday.com/zh-tw/product/159391",
+      "tags": [
+        "日本"
+      ],
+      "placement_hint": "更多旅遊優惠",
+      "placement_zone": "sidebar_only",
+      "source_label": "AikoTravel",
+      "published": "2026-07-06",
+      "content_hash": "a20dd3fa3bf48d10"
+    }
+  ]
+}
